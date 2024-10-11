@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffff;
+}
+
+.bundle-save {
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #016F56;
+    position: relative;
+}
+
+h1::before,
+h1::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 1.5px;
+    background-color: #e0e0e0;
+}
+
+h1::before {
+    left: 0;
+}
+
+h1::after {
+    right: 0;
+}
+
+.option {
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.option:hover {
+    border-color: #016F56;
+}
+
+.option.active {
+    border-color: #016F56;
+}
+
+.option.popular::before {
+    content: "Most Popular";
+    position: absolute;
+    top: -12px;
+    right: 10px;
+    background-color: #016F56;
+    color: white;
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #016F56;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.discount {
+    color: #016F56;
+    font-size: 12px;
+}
+
+.dropdown {
+    padding: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.shipping-info {
+    font-size: 14px;
+    color: #016F56;
+}
+
+#totalPrice {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: right;
+}
+
+.add-to-cart {
+    display: block;
+    width: 100%;
+    background-color: #016F56;
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #016F56;
+}
+
+.payable {
+    display: flex;
+    justify-content: space-between;
+}
+
+.powered-by {
+    text-align: right;
+    font-size: 12px;
+    color: black;
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: bold;
+}
+.show{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discount-right {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    text-align: right;
+}
+
+.container th {
+    text-align: left;
+}
+
+.container td {
+    text-align: left;
+}
+
+.bottom {
+    display: none;
+}
